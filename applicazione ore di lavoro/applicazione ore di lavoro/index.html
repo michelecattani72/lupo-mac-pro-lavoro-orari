@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUPO MAC PRO - Orari Lavoro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @media print {
+        .no-print {
+          display: none !important;
+        }
+
+        /* When printing modal, hide everything */
+        body.modal-is-printing * {
+            visibility: hidden;
+        }
+
+        /* Then make the modal's printable area and its contents visible */
+        body.modal-is-printing #printable-report-modal,
+        body.modal-is-printing #printable-report-modal * {
+            visibility: visible;
+        }
+        
+        /* Position the printable area for printing */
+        body.modal-is-printing #printable-report-modal {
+            position: absolute !important;
+            left: 0;
+            top: 0;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            box-shadow: none !important;
+            border: none !important;
+        }
+
+        /* Reset the modal's containers */
+        body.modal-is-printing .fixed.inset-0 {
+            position: static !important;
+        }
+        
+        body.modal-is-printing .bg-white.dark\\:bg-slate-800 {
+            box-shadow: none !important;
+            border: none !important;
+            padding: 0 !important;
+            max-height: none !important;
+            overflow: visible !important;
+        }
+      }
+    </style>
+    <!-- Traduttore per TSX (Babel) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://aistudiocdn.com/react@^19.2.0",
+          "react/": "https://aistudiocdn.com/react@^19.2.0/",
+          "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5",
+          "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+        }
+      }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200">
+    <div id="root"></div>
+    <!-- Modificato per usare il traduttore Babel -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
