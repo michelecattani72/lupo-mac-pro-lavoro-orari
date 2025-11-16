@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Company, WorkEntry } from '../types.ts';
-import { SaveIcon, MicIcon } from './Icons.tsx';
+import { Company, WorkEntry } from '../types';
+import { SaveIcon, MicIcon } from './Icons';
 
 // Fix: Add a local interface for SpeechRecognition to resolve TypeScript error.
 // The Web Speech API types are not included in default TS DOM typings.

@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Header from './components/Header.tsx';
-import CompanySetup from './components/CompanySetup.tsx';
-import TimesheetForm from './components/TimesheetForm.tsx';
-import ReportView from './components/ReportView.tsx';
-import { Company, WorkEntry } from './types.ts';
-import { useLocalStorage } from './hooks/useLocalStorage.ts';
-import { BuildingIcon, ClockIcon, CalendarIcon, SaveIcon, UploadIcon } from './components/Icons.tsx';
+import Header from './components/Header';
+import CompanySetup from './components/CompanySetup';
+import TimesheetForm from './components/TimesheetForm';
+import ReportView from './components/ReportView';
+import { Company, WorkEntry } from './types';
+import { useLocalStorage } from './hooks/useLocalStorage';
+import { BuildingIcon, ClockIcon, CalendarIcon, SaveIcon, UploadIcon } from './components/Icons';
 
 enum View {
     TIMESHEET = 'timesheet',

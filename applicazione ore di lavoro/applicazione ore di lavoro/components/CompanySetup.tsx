@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Company } from '../types.ts';
-import { BuildingIcon, PlusIcon, TrashIcon, EditIcon } from './Icons.tsx';
+import { Company } from '../types';
+import { BuildingIcon, PlusIcon, TrashIcon, EditIcon } from './Icons';
 
 interface CompanySetupProps {
   companies: Company[];

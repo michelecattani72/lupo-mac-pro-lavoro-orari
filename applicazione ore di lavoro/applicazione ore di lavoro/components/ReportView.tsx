@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
-import { Company, WorkEntry, CalculatedEntry } from '../types.ts';
-import { PrinterIcon, SaveIcon, EditIcon, TrashIcon } from './Icons.tsx';
-import ReportModal from './ReportModal.tsx';
+import { Company, WorkEntry, CalculatedEntry } from '../types';
+import { PrinterIcon, SaveIcon, EditIcon, TrashIcon } from './Icons';
+import ReportModal from './ReportModal';
 
 interface ReportViewProps {
   companies: Company[];

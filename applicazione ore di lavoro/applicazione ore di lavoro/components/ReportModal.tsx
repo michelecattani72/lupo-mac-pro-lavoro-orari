@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo } from 'react';
-import { CalculatedEntry } from '../types.ts';
-import { PrinterIcon } from './Icons.tsx';
+import { CalculatedEntry } from '../types';
+import { PrinterIcon } from './Icons';
 
 interface ReportModalProps {
     onClose: () => void;

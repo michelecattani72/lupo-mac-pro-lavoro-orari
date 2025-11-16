@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-g" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LUPO MAC PRO - Orari Lavoro</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -48,24 +48,20 @@
         }
       }
     </style>
-    <!-- Traduttore per TSX (Babel) -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="importmap">
-      {
-        "imports": {
-          "react": "https://aistudiocdn.com/react@^19.2.0",
-          "react/": "https://aistudiocdn.com/react@^19.2.0/",
-          "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5",
-          "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
-        }
-      }
-    </script>
-  <link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200">
     <div id="root"></div>
-    <!-- Modificato per usare il traduttore Babel -->
-    <script type="text/babel" data-type="module" src="./index.tsx"></script>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
